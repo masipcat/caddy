@@ -245,6 +245,12 @@ func parseTLS(h Helper) ([]ConfigValue, error) {
 					return nil, h.ArgErr()
 				}
 				mgr.CA = arg[0]
+			case "key_type":
+				arg := h.RemainingArgs()
+				if len(arg) != 1 {
+					return nil, h.ArgErr()
+				}
+				mgr.KeyType = arg[0]
 
 			// DNS provider for ACME DNS challenge
 			case "dns":
