@@ -18,7 +18,7 @@ import (
 	"crypto/tls"
 	"fmt"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/masipcat/caddy/v2"
 )
 
 func init() {

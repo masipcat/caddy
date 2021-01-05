@@ -20,9 +20,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 	zaplogfmt "github.com/jsternberg/zap-logfmt"
+	"github.com/masipcat/caddy/v2"
+	"github.com/masipcat/caddy/v2/caddyconfig/caddyfile"
 	"go.uber.org/zap"
 	"go.uber.org/zap/buffer"
 	"go.uber.org/zap/zapcore"
@@ -125,7 +125,7 @@ func (je *JSONEncoder) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 //
 // ⚠️ DEPRECATED. Do not use. It will eventually be removed
 // from the standard Caddy modules. For more information,
-// see https://github.com/caddyserver/caddy/issues/3575.
+// see https://github.com/masipcat/caddy/issues/3575.
 type LogfmtEncoder struct {
 	zapcore.Encoder `json:"-"`
 	LogEncoderConfig
@@ -143,7 +143,7 @@ func (LogfmtEncoder) CaddyModule() caddy.ModuleInfo {
 func (lfe *LogfmtEncoder) Provision(ctx caddy.Context) error {
 	ctx.Logger(lfe).Warn("the logfmt encoder is DEPRECATED and will soon be removed from the standard modules",
 		zap.String("recommendation", "switch to a log format that isn't broken"),
-		zap.String("more_info", "https://github.com/caddyserver/caddy/issues/3575"))
+		zap.String("more_info", "https://github.com/masipcat/caddy/issues/3575"))
 	lfe.Encoder = zaplogfmt.NewEncoder(lfe.ZapcoreEncoderConfig())
 	return nil
 }

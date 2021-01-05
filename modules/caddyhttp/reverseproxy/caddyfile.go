@@ -23,13 +23,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/caddyconfig/httpcaddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/headers"
 	"github.com/dustin/go-humanize"
+	"github.com/masipcat/caddy/v2"
+	"github.com/masipcat/caddy/v2/caddyconfig"
+	"github.com/masipcat/caddy/v2/caddyconfig/caddyfile"
+	"github.com/masipcat/caddy/v2/caddyconfig/httpcaddyfile"
+	"github.com/masipcat/caddy/v2/modules/caddyhttp"
+	"github.com/masipcat/caddy/v2/modules/caddyhttp/headers"
 )
 
 func init() {

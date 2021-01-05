@@ -18,11 +18,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
 	"github.com/dustin/go-humanize"
+	"github.com/masipcat/caddy/v2"
+	"github.com/masipcat/caddy/v2/caddyconfig"
+	"github.com/masipcat/caddy/v2/caddyconfig/caddyfile"
+	"github.com/masipcat/caddy/v2/modules/caddyhttp"
 )
 
 // serverOptions collects server config overrides parsed from Caddyfile global options

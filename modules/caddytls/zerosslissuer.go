@@ -25,9 +25,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 	"github.com/caddyserver/certmagic"
+	"github.com/masipcat/caddy/v2"
+	"github.com/masipcat/caddy/v2/caddyconfig/caddyfile"
 	"github.com/mholt/acmez/acme"
 	"go.uber.org/zap"
 )

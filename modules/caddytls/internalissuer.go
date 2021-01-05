@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddypki"
 	"github.com/caddyserver/certmagic"
+	"github.com/masipcat/caddy/v2"
+	"github.com/masipcat/caddy/v2/caddyconfig/caddyfile"
+	"github.com/masipcat/caddy/v2/modules/caddypki"
 	"github.com/smallstep/certificates/authority/provisioner"
 	"go.uber.org/zap"
 )

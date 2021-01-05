@@ -22,7 +22,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/masipcat/caddy/v2"
 	"github.com/mholt/acmez"
 )
 

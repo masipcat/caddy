@@ -23,8 +23,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
 	"github.com/dustin/go-humanize"
+	"github.com/masipcat/caddy/v2"
 )
 
 func (fsrv *FileServer) directoryListing(files []os.FileInfo, canGoUp bool, root, urlPath string, repl *caddy.Replacer) browseListing {

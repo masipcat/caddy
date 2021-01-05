@@ -27,8 +27,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
+	"github.com/masipcat/caddy/v2"
+	"github.com/masipcat/caddy/v2/modules/caddytls"
 	"golang.org/x/net/http2"
 )
 

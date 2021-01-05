@@ -15,10 +15,10 @@
 package caddyzstd
 
 import (
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/encode"
 	"github.com/klauspost/compress/zstd"
+	"github.com/masipcat/caddy/v2"
+	"github.com/masipcat/caddy/v2/caddyconfig/caddyfile"
+	"github.com/masipcat/caddy/v2/modules/caddyhttp/encode"
 )
 
 func init() {

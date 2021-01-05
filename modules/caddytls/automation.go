@@ -20,8 +20,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/certmagic"
+	"github.com/masipcat/caddy/v2"
 	"github.com/mholt/acmez"
 )
 

@@ -23,7 +23,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/masipcat/caddy/v2"
 )
 
 func TestHTTPVarReplacement(t *testing.T) {
@@ -173,7 +173,7 @@ eqp31wM9il1n+guTNyxJd+FzVAH+hCZE5K+tCgVDdVFUlDEHHbS/wqb2PSIoouLV
 		},
 		{
 			input:  "{http.request.tls.client.certificate_pem}",
-			expect: string(clientCert) + "\n",  // returned value comes with a newline appended to it
+			expect: string(clientCert) + "\n", // returned value comes with a newline appended to it
 		},
 	} {
 		actual := repl.ReplaceAll(tc.input, "<empty>")

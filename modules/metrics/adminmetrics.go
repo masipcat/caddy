@@ -17,7 +17,7 @@ package metrics
 import (
 	"net/http"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/masipcat/caddy/v2"
 )
 
 func init() {
